@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -58,10 +59,10 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner paroller" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
                 <div class="carousel-item active">
                     <img src="img/01.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block element-animate" data-animate-effect="fadeInUp"> 
                         <p class="h5">I Congresso Multidisciplinar On-line FICR</p>
                         <p>O congresso totalmente on-line, com palestra de 15 minutos e fórum para discussão. Teremos palestras nas áreas: jurídica, gestão, saúde, tecnologia e educação.</p>
                         <a href="#" class="btn btn-primary mb-2">Inscreva-se</a>
@@ -69,10 +70,27 @@
                 </div>
             </div>
         </div>
-        <!-- Cards -->
-        <section class="section-cards mt-5 pb-5">
+        <section class="quick-info element-animate" data-animate-effect="fadeInLeft">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-8 bgcolor">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <p class="h5">Programação</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cards -->
+        <section class="section-cards mt-2 pb-2">
+            <div class="container">
+                <div class="row element-animate" data-animate-effect="fadeInLeft">
                     <div class="card col-sm-6 col-md-3">
                         <img src="img/c01.jpg" alt="" class="card-img-top">
                         <div class="card-body">
@@ -192,5 +210,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="vendor/jquery/jquery.waypoints.min.js"></script>
+        <script src="vendor/jquery/jquery.paroller.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
