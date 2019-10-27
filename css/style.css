@@ -4,6 +4,8 @@ body{
 
 .navbar{
     padding: 0;
+    background-color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0.3)
 }
 
 .navbar-brand{
@@ -63,6 +65,7 @@ body{
 .carousel-caption .carousel-text{
     background-color: #242a2c;
     margin: 5px 30px 35px;
+    font-weight: bold;
     color: white;
     padding: 15px;
     font-size: .9rem;
@@ -78,7 +81,6 @@ body{
     background-color: rgba(0,0,0,.2);
 }
 
-
 @media screen and (min-width:992px){
     .nav-bar{
         background-color: transparent;
@@ -89,4 +91,78 @@ body{
         padding-top:0;
         padding-bottom:0;
     }
+}
+
+.card {
+    border: none;
+
+}
+
+.card-body{
+    border-left: 1px solid rgba(0,0,0,.15);
+}
+
+.section-cards{
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.15)
+}
+
+.section-content{
+    background-color: #f8f9f9;
+}
+
+.articles-container{
+    background-color: #202057;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.articles-container .h3{
+    margin-bottom:0;
+}
+
+.articles-thumbs{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-rows: auto;
+    grid-gap:0;
+}
+
+.articles-thumbs img{
+    display: block;
+    width: 100%;
+}
+
+@media screen and(min-width: 991px){
+    .articles-thumbs{
+        grid-template-columns:repeat(6,1fr);
+    }
+}
+
+.section-quote{
+    background-color: #202057;
+    padding: 50px 0;
+    border-bottom: 12px solid #202057;
+    color:white;
+    text-align: center;
+}
+
+.footer{
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color:#454e51;
+}
+
+.footer-links{
+    margin:0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+.footer-links a{
+    color: inherit;
+    text-decoration: none;
 }
