@@ -40,9 +40,12 @@ body{
     text-align: center;
 }
 
+/**
 .carousel-item {
     height: 600px;     
 }
+
+**/
 
 
 .carousel-caption .h5{
